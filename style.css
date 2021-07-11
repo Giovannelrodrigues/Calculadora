@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-calc: rgb(140, 140, 223);
+    --color-bg:rgb(72, 57, 121);
+    --color-input:rgba(195, 195, 235, 0.397);
+}
+
+.green-mode:root{
+    --color-calc: rgb(33, 117, 58);
+    --color-bg:rgb(4, 59, 9);
+    --color-input:rgba(127, 184, 127, 0.397);
+}
+
+.dark-mode:root{
+    --color-calc: rgb(83, 83, 83);
+    --color-bg:rgb(8, 8, 8);
+    --color-input:rgba(243, 243, 243, 0.397);
+}
+.red-mode:root{
+    --color-calc: rgb(37, 2, 2);
+    --color-bg:rgb(192, 21, 21);
+    --color-input:rgba(212, 113, 113, 0.513);
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-bg);
+    flex-direction: column;
+}
+
+
+.calc{
+    background-color: var(--color-calc);
+    border-radius: 20px ;
+    width: 450px;
+    height: 340px;
+    min-width: 320px;
+    min-height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+table{
+    margin-top: 20px;
+    margin: 20px;
+    width: 410px;
+    height: 280px;
+}
+td input{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-input);
+    border: none;
+    border-radius: 10px;
+    text-align: right;
+    outline: none;
+    box-shadow: 0px 2px 2px rgb(80, 80, 80);
+    font-size: 1.5rem;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.btn{
+    width: 20px;
+}
+.btn button{
+    padding: 0.2rem;
+    border-radius: 7px;
+    width: 90px;
+    height: 45px;
+    font-size: 1.5rem;
+    color:rgb(0, 0, 0);
+    border: none;
+    background-color: var(--color-input);
+    box-shadow: 0px 2px 2px rgb(80, 80, 80);
+}
+
+.large button{
+    width: 192px;
+}
+
+.range{
+    background: var(--color-bg);
+}
+
+button:hover{
+    opacity: 0.7;
+}
+
+input[type=range] {
+    height: 20px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 200px;
+  }
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 14px;
+    cursor: pointer;
+    animation: 0.2s;
+    box-shadow: 1px 1px 1px #000;
+    background: var(--color-calc);
+    border-radius: 14px;
+    border: 0px solid #000000;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    border: 0px solid #000000;
+    height: 20px;
+    width: 40px;
+    border-radius: 12px;
+    background: var(--color-input);
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -3px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: var(-color-bg);
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 14px;
+    cursor: pointer;
+    animation: 0.2s;
+    box-shadow: 1px 1px 1px #000;
+    background: var(-color-bg);
+    border-radius: 14px;
+    border: 0px solid #000000;
+  }
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    border: 0px solid #000000;
+    height: 20px;
+    width: 40px;
+    border-radius: 12px;
+    background: var(--color-bg);
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 14px;
+    cursor: pointer;
+    animation: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: var(-color-bg);
+    border: 0px solid #000000;
+    border-radius: 28px;
+    box-shadow: 1px 1px 1px var(-color-bg);
+  }
+  input[type=range]::-ms-fill-upper {
+    background: var(-color-bg);
+    border: 0px solid #000000;
+    border-radius: 28px;
+    box-shadow: 1px 1px 1px var(-color-bg);
+  }
+  input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 0px 0px 0px #000000;
+    border: 0px solid #000000;
+    height: 20px;
+    width: 40px;
+    border-radius: 12px;
+    background: var(--color-bg);
+    cursor: pointer;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: var(-color-bg);
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: var(-color-bg);
+  }
+
+@media (max-width: 375px) {
+    table{
+        width: 320px;
+        height: 320px;
+    }
+
+    .btn button{
+        padding: 0.2rem;
+        border-radius: 7px;
+        width: 70px;
+        height: 45px;
+        font-size: 1.5rem;
+        color:rgb(0, 0, 0);
+        border: none;
+    }
+    
+    .large button{
+        width: 142px;
+    }
+}
+

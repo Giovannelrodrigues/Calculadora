@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="inputs">
+            <input type="range" min="1" max="4" class="range" value="1">
+        </div>
+        <div class="calc">
+            <table>
+                <td colspan="4"><input type="text" class="result"></td>
+                <tr></tr>
+                <td class="btn"><button onclick="insert('7')">7</button></td>
+                <td class="btn"><button onclick="insert('8')">8</button></td>
+                <td class="btn"><button onclick="insert('9')">9</button></td>
+                <td class="btn blue"><button onclick="back()">Del</button></td>
+                <tr></tr>
+                <td class="btn"><button onclick="insert('4')">4</button></td>
+                <td class="btn"><button onclick="insert('5')">5</button></td>
+                <td class="btn"><button onclick="insert('6')">6</button></td>
+                <td class="btn"><button onclick="insert('+')">+</button></td>
+                <tr></tr>
+                <td class="btn"><button onclick="insert('1')">1</button></td>
+                <td class="btn"><button onclick="insert('2')">2</button></td>
+                <td class="btn"><button onclick="insert('3')">3</button></td>
+                <td class="btn"><button onclick="insert('-')">-</button></td>
+                <tr></tr>
+                <td class="btn"><button onclick="insert('.')">.</button></td>
+                <td class="btn"><button onclick="insert('0')">0</button></td>
+                <td class="btn"><button onclick="insert('/')">/</button></td>
+                <td class="btn"><button onclick="insert('*')">x</button></td>
+                <tr></tr>
+                <td class="btn large" colspan="2"><button onclick="reset()">Reset</button></td>
+                <td class="btn large" colspan="2"><button onclick="igual()">=</button></td>
+            </table>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
